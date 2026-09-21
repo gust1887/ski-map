@@ -18,7 +18,7 @@ export const friends = [
   {
     id: '3',
     name: 'Stine',
-    speedKmh: 28,
+    speedKmh: 54,
     top: '56%',
     left: '68%',
   },
