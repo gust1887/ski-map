@@ -23,17 +23,19 @@ export default StyleSheet.create({
     marginBottom: 24,
     textAlign: 'center',
   },
+
+  // Knapper
   button: {
     backgroundColor: '#1e5fd9',
     paddingVertical: 14,
     paddingHorizontal: 28,
     borderRadius: 10,
     marginTop: 12,
-    width: '100%',
     alignItems: 'center',
   },
   buttonSecondary: {
     backgroundColor: '#eef2fa',
+    width: '100%',
   },
   buttonText: {
     color: '#fff',
@@ -43,57 +45,29 @@ export default StyleSheet.create({
   buttonTextSecondary: {
     color: '#1e5fd9',
   },
-
-  // Map skærm
-  mapContainer: {
-    flex: 1,
-    backgroundColor: '#000',
-  },
-  mapImage: {
+  buttonFull: {
     width: '100%',
-    height: '100%',
-  },
-  marker: {
-    position: 'absolute',
-    alignItems: 'center',
-  },
-  markerDot: {
-    width: 16,
-    height: 16,
-    borderRadius: 8,
-    backgroundColor: '#1e5fd9',
-    borderWidth: 2,
-    borderColor: '#fff',
-  },
-  markerLabel: {
-    marginTop: 2,
-    backgroundColor: 'rgba(0,0,0,0.65)',
-    color: '#fff',
-    fontSize: 11,
-    paddingHorizontal: 6,
-    paddingVertical: 2,
-    borderRadius: 6,
-    overflow: 'hidden',
-  },
-  mySpeedBadge: {
-    position: 'absolute',
-    top: 16,
-    left: 16,
-    backgroundColor: 'rgba(255,255,255,0.92)',
-    paddingHorizontal: 14,
-    paddingVertical: 10,
-    borderRadius: 10,
-  },
-  mySpeedText: {
-    fontSize: 18,
-    fontWeight: '700',
-  },
-  mySpeedLabel: {
-    fontSize: 11,
-    color: '#555',
   },
 
-  // Friends list skærm
+  // Kort
+  map: {
+    flex: 1,
+  },
+  mapButton: {
+    position: 'absolute',
+    bottom: 24,
+    alignSelf: 'center',
+  },
+
+  // Venneliste og rangliste
+  searchInput: {
+    margin: 12,
+    padding: 12,
+    borderWidth: 1,
+    borderColor: '#ddd',
+    borderRadius: 10,
+    fontSize: 16,
+  },
   listItem: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -111,9 +85,57 @@ export default StyleSheet.create({
     fontSize: 13,
     color: '#888',
   },
+  listRight: {
+    alignItems: 'flex-end',
+  },
   listSpeed: {
     fontSize: 16,
     fontWeight: '700',
     color: '#1e5fd9',
+  },
+  deleteText: {
+    color: '#c0392b',
+    fontSize: 13,
+    marginTop: 4,
+  },
+  emptyText: {
+    textAlign: 'center',
+    color: '#888',
+    marginTop: 32,
+  },
+  footerButton: {
+    margin: 16,
+  },
+  rankText: {
+    fontSize: 18,
+    fontWeight: '700',
+    width: 36,
+  },
+  rankName: {
+    flex: 1,
+  },
+
+  // Formular
+  formContainer: {
+    flex: 1,
+    backgroundColor: '#fff',
+    padding: 20,
+  },
+  label: {
+    fontSize: 14,
+    fontWeight: '600',
+    marginTop: 12,
+    marginBottom: 6,
+  },
+  input: {
+    borderWidth: 1,
+    borderColor: '#ddd',
+    borderRadius: 10,
+    padding: 12,
+    fontSize: 16,
+  },
+  errorText: {
+    color: '#c0392b',
+    marginTop: 10,
   },
 });
